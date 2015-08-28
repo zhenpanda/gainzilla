@@ -4,12 +4,47 @@
 	  <title>Gainzilla</title>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+      <meta name="viewport" content="initial-scale=1.0">
+      <meta charset="utf-8">
+		<script>
+		function initialize() {
+		    var latlng = new google.maps.LatLng(40.740112,-73.990060);
+		        var myOptions ={
+		            zoom: 12,
+		            center: {lat: 40.740112, lng: -73.990060},
+		           panControl: true,
+		             zoomControl: true,
+		             size: (500,500)
+		           };        
+		        var map = new google.maps.Map(document.getElementById('map'),myOptions);
+		        var myLatLng = {lat: 40.740112, lng: -73.990060};
+ 
+		        var infowindow = new google.maps.InfoWindow();
+		            var latitude =  myLatLng.lat;
+		            var longitude=  myLatLng.lng;
+					/*		            
+					var marker = new google.maps.Marker({
+		            position: new google.maps.LatLng(latitude, longitude),
+		            map: map,
+		            animation: google.maps.Animation.DROP
+		            });
+					*/
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		</script>
+
+		<style>
+			#map {
+			    height: 500px;
+			    width: 500px;
+			}    
+		</style>
 	  <%= csrf_meta_tags %>
 	</head>
 <body>
 
 	<div class="login">
-	  
 	  <% if session[:current_user_id]%>
 	    <h1>Welcome Back</h1>
 	    <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id])%>
@@ -26,7 +61,6 @@
 	    <%= submit_tag "Login"%>
 	    <% end %>
 	  <% end %>
-
 	</div>
 
 <%= yield %>
