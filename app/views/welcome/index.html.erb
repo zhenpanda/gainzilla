@@ -1,4 +1,37 @@
+<script>
+	function initialize() {
+	    var latlng = new google.maps.LatLng(40.740112,-73.990060);
+	        var myOptions ={
+	            zoom: 12,
+	            center: {lat: 40.740112, lng: -73.990060},
+	           panControl: true,
+	             zoomControl: true,
+	             size: (500,500)
+	           };        
+	        var map = new google.maps.Map(document.getElementById('map'),myOptions);
+	        var myLatLng = {lat: 40.740112, lng: -73.990060};
+
+	        var infowindow = new google.maps.InfoWindow();
+	            var latitude =  myLatLng.lat;
+	            var longitude=  myLatLng.lng;
+				/*		            
+				var marker = new google.maps.Marker({
+	            position: new google.maps.LatLng(latitude, longitude),
+	            map: map,
+	            animation: google.maps.Animation.DROP
+	            });
+				*/
+		}
+	google.maps.event.addDomListener(window, "load", initialize);
+</script>
+
 <h2>Gainzilla</h2>
-<p>
-  Welcome back to Gainzilla it is: <%= Time.now %>
-</p>
+<p> Welcome back to Gainzilla it is: <%= Time.now %> </p>
+
+<style>
+	#map {
+	    height: 500px;
+	    width: 500px;
+	}    
+</style>
+<div id="map"></div>
