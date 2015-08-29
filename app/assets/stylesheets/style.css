@@ -25,6 +25,7 @@
   padding: 26px 4px 0px 4px;
   margin-bottom: 4px;
   display: block;
+  
 }
 /* Main page splash img */
 .splash-bg{
@@ -50,6 +51,17 @@
 .river-color{
   background-color: #cc3300;
   height: 120px;
+}
+.login-banner{
+  height: 80px;
+  background-color: #ffcc99;
+}
+.banner-text{
+  margin-top: 25px;
+}
+.crack-bg{
+  background-image: url("crack_bg.png");
+  height: 920px;
 }
 /* ------------------------------------------------------- */
 .no-gutter {

@@ -1,9 +1,9 @@
-<!-- splash img -->
 <div class="black-bg">
+
+  <!-- splash img -->
   <div class="container hidden-xs no-gutter"> 
   <!--|____________| -->
     <div class="row no-gutter no-hugger">
-      <!-- Desktop display image -->
       <div class="col-xs-12 text-center splash-bg no-gutter">
         <%= image_tag 'splash_img.png', alt: 'splash_img'%>
       </div>
@@ -12,42 +12,60 @@
     <div class='ground-color'></div>
     <div class="river-color"></div>
   </div>
-</div>
+  
+  <div class="container hidden-xs no-gutter"> 
+    <!--|____________| -->
+    <div class="row login-banner no-gutter no-hugger">
+      <div class="col-xs-6 text-center no-gutter banner-text">
+        <%= image_tag 'login_banner.png', alt: 'login_img'%>
+      </div>
+      <div class="col-xs-6 text-center no-gutter banner-text">
+         <%= image_tag 'register_banner.png', alt: 'login_img'%>
+      </div>
+    </div>
+  </div>
 
-<canvas id="myChart" width="400" height="400"></canvas>
-<!-- 
-<div class="login">
-  <% if session[:current_user_id]%>
+  <div class="container hidden-xs no-gutter crack-bg"> 
+    <!--|____________| -->
     
-    <h1>Welcome Back</h1>
-    <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id])%>
-    <%= link_to "Logout", sessions_path, method: :delete %>
-    <% else %>
+  </div>
 
-    <p>Already a Member</p>
-    <%= form_tag(sessions_path) do%> 
-    <%= label_tag :username%>
-    <%= text_field_tag :username%>
-    <br>
-    <%= label_tag :password %>
-    <%= password_field_tag :password%>
-    <br>
-    <%= submit_tag "Login"%>
-    <% end %>
-  <% end %>
 </div>
 
-<div class="form">
-  <h1>Add a Member!</h1>
-  <%= form_for @user do |f|%>
-  <%= f.label :username%><br>
-  <%= f.text_field :username %><br>
-  <%= f.label :password%><br>
-  <%= f.password_field :password%><br>
-  <%= f.label :password_confirmation%><br>
-  <%= f.password_field :password_confirmation%><br>
-  <br>
-  <%= f.submit "Sign Up"%>
-  <% end %>
-</div> 
+<!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+<!-- 
+  <div class="login">
+    <% if session[:current_user_id]%>
+      
+      <h1>Welcome Back</h1>
+      <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id])%>
+      <%= link_to "Logout", sessions_path, method: :delete %>
+      <% else %>
+
+      <p>Already a Member</p>
+      <%= form_tag(sessions_path) do%> 
+      <%= label_tag :username%>
+      <%= text_field_tag :username%>
+      <br>
+      <%= label_tag :password %>
+      <%= password_field_tag :password%>
+      <br>
+      <%= submit_tag "Login"%>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="form">
+    <h1>Add a Member!</h1>
+    <%= form_for @user do |f|%>
+    <%= f.label :username%><br>
+    <%= f.text_field :username %><br>
+    <%= f.label :password%><br>
+    <%= f.password_field :password%><br>
+    <%= f.label :password_confirmation%><br>
+    <%= f.password_field :password_confirmation%><br>
+    <br>
+    <%= f.submit "Sign Up"%>
+    <% end %>
+  </div> 
 -->

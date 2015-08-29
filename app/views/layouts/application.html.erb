@@ -24,24 +24,26 @@
 
 	<body>
 
-		<!-- Nav bar -->
-		<div class="hidden-xs">
-		  <nav class="navbar-default" role="navigation">
-		    <div class="container">
-		    	<div class="zilla-logo">
-					<%= link_to href: '/' do %>
-					    <%= image_tag 'zillaHead.png', width: 72, height: 72, alt: 'zillaHead'%>
-					<% end %>
-				</div>
-		      	<div class="zilla-login">
-			      	<%= link_to href: '/' do %>
-					    <%= image_tag 'navbar_text.png', width: 300, height: 24, alt: 'navbar_text'%>
-					<% end %>
-		      	</div>
-		  </nav>
+		<div class="black-bg">
+		  <!-- Nav bar -->
+		  <div class="container hidden-xs no-gutter"> 
+		    <div class="hidden-xs">
+		      <nav class="navbar-default" role="navigation">
+		        <div class="container">
+		          <div class="zilla-logo">
+		          <%= link_to href: '/' do %>
+		              <%= image_tag 'zillaHead.png', width: 72, height: 72, alt: 'zillaHead'%>
+		          <% end %>
+		        </div>
+		            <div class="zilla-login" id="nav-scroll-down">
+		              <%= image_tag 'navbar_text.png', width: 300, height: 24, alt: 'navbar_text'%>
+		            </div>
+		      </nav>
+		    </div>
+		  </div>
 		</div>
 
-	<%= yield %>
+		<%= yield %>
 
 	</body>
 
