@@ -25,7 +25,7 @@
   padding: 26px 4px 0px 4px;
   margin-bottom: 4px;
   display: block;
-  
+  cursor:pointer;
 }
 /* Main page splash img */
 .splash-bg{
@@ -62,6 +62,24 @@
 .crack-bg{
   background-image: url("crack_bg.png");
   height: 920px;
+}
+.login-form {
+  margin-top: 60px; 
+}
+.form-space {
+  margin-top: 30px;
+}
+.go-button{
+  background-image: url("go_button.png");
+  width: 204px;
+  height: 86px;
+  cursor:pointer;
+}
+.getin-button{
+  background-image: url("getin_button.png");
+  width: 204px;
+  height: 86px;
+  cursor:pointer;
 }
 /* ------------------------------------------------------- */
 .no-gutter {

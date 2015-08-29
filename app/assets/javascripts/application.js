@@ -97,10 +97,10 @@ $(document).ready(function() {
 	*/
 
 	$("#nav-scroll-down").click(function() {
-		alert( "Handler for .click() called." );
+		//alert( "Handler for .click() called." );
 		$("html, body").animate({ scrollTop: 1000 }, "slow");
 	});
-	
+
 });
 
 
