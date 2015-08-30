@@ -81,10 +81,10 @@
   height: 86px;
   cursor:pointer;
 }
-/* weight page */
+/* weight section */
 /* ------------------------------------------------------- */
-.weight-bg{
-  background-color: #cc3300;
+.parent-div{
+  position: relative;
 }
 .weight-top-banner{
   background-color: #ffcc99;
@@ -93,8 +93,8 @@
   border-bottom: thick white;
 }
 .weight-scale-bg{
-  height: 580px;
   background-color: #cc3300;
+  height: 580px;
   position: relative;
 }
 .scale{
@@ -114,13 +114,46 @@
   height: 600px;
 }
 .chart-canvas{
-  margin-top: 120px;
+  margin-top: 110px;
   background-color: white;
   margin-bottom: 40px;
   border-style: outset;
 }
 #science-graph{
   padding-top: 0px;
+}
+#zilla-weight{
+  padding-top: 128px;
+}
+#everything-ok{
+  padding-top: 35px;
+}
+#red-arrow-down{
+  position: absolute;
+  left: 310px;
+  top: 545px;
+  z-index: 10;
+  cursor:pointer;
+}
+#zilla-eats-bg{
+  height: 630px;
+  background-color: #cc3300;
+}
+#zilla-eat{
+  padding-top: 120px;
+}
+#yellow-arrow-down{
+  position: absolute;
+  left: 385px;
+  top: 575px;
+  z-index: 10;
+  cursor:pointer;
+}
+/* map section */
+/* ------------------------------------------------------- */
+.map-bg{
+  height: 910px;
+  background-color: #ffcc99;
 }
 #map {
       height: 500px;

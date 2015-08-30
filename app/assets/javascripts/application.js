@@ -32,21 +32,19 @@ $(document).ready(function() {
 
 	//login page js
 	$("#nav-scroll-down").click(function() {
-		//alert( "Handler for .click() called." );
 		$("html, body").animate({ scrollTop: 1000 }, "slow");
 	});
 
-	//weight page js
-	$( ".chart-canvas" ).hide();
-	$( "#science-graph" ).hide();
+	//weight page: chart section
+	$( ".weight-hide" ).hide();
 	$( "#check-box" ).click(function() {
 	  $('#weight-box').val('');
-	  $("html, body").animate({ scrollTop: 725 }, "slow");
+	  $("html, body").animate({ scrollTop: 675 }, "slow");
 
 	  //draw chart with some timeout
 	  setTimeout(function(){
-	  	$( ".chart-canvas" ).show(); 
-	  	$( "#science-graph" ).show();
+	  	$( ".weight-hide" ).show(); 
+
 		// Get the context of the canvas element we want to select
 		var ctx = document.getElementById("myChart").getContext("2d");
 		var data = {
@@ -91,10 +89,15 @@ $(document).ready(function() {
 		console.log("chart is bein loaded.");
 	  	}, 700
 	  );
-
+	});
+	$("#red-arrow-down").click(function() {
+		$("html, body").animate({ scrollTop: 1285 }, "slow");
+	});
+	$("#yellow-arrow-down").click(function() {
+		$("html, body").animate({ scrollTop: 1900 }, "slow");
 	});
 
-
+	//weight page: map section
 });
 
 /*

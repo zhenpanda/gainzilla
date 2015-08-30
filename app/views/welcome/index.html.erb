@@ -52,21 +52,50 @@
   <div class="container hidden-xs no-gutter"> 
 	<div class="row no-gutter no-hugger chart-bg">
   	<!--|_||_____||_____||_| -->
-  	  <div class="col-xs-1"></div>
-  	  <div class="col-xs-5 text-center no-gutter">
-
+  	  <div class="col-xs-1 weight-hide"></div>
+  	  <div class="col-xs-5 text-center no-gutter parent-div weight-hide">
+  	  	<div id="zilla-weight">
+  	  		<%= image_tag 'zillaWeight.png', width: 250, height: 210, alt: 'zillaWeight_text'%>
+  	  	</div>
+  	  	<div id="everything-ok">
+  	  		<%= image_tag 'everything_ok.png', width: 202, height: 115, alt: 'zillaWeight_text'%>
+  	  	</div>
+  	  	<div id="red-arrow-down">
+  	  		<%= image_tag 'red_arrow_down.png', width: 108, height: 110, alt: 'red_arrow_down_img'%>
+  	  	</div>
   	  </div>
-  	  <div class="col-xs-5 text-center no-gutter">	
+  	  <div class="col-xs-5 text-center no-gutter weight-hide">	
 		<div class="chart-canvas" >
 			<canvas id="myChart" width="300" height="300"></canvas>
 		</div>
 		<div id="science-graph">
-			<%= image_tag 'science_graph.png', width: 330, height: 20, alt: 'scale_img'%>
+			<%= image_tag 'science_graph.png', width: 330, height: 20, alt: 'science_img'%>
 		</div>
-	  <div class="col-xs-1"></div>
+	  <div class="col-xs-1 weight-hide"></div>
   	  </div>
   	</div>
 
+  <div class="container hidden-xs no-gutter"> 
+	<div class="row no-gutter no-hugger chart-bg">
+  	  <!--|____________| -->
+  	  <div class="col-xs-12 text-center parent-div" id="zilla-eats-bg">
+  	  	<div id="zilla-eat">
+			<%= image_tag 'zilla_eats.png', width: 390, height: 410, alt: 'zilla_eats_img'%>
+  	  	</div>
+  	  	<div id="yellow-arrow-down">
+  	  		<%= image_tag 'yellow_arrow_down.png', width: 108, height: 110, alt: 'yellow_arrow_down_img'%>
+  	  	</div>
+  	  </div>
+  	</div>
+  </div>
+
+  <div class="container hidden-xs no-gutter"> 
+	<div class="row no-gutter no-hugger map-bg">
+  	  <!--|____________| -->
+  	  <div class="col-xs-12 text-center">
+  	  </div>
+  	</div>
+  </div>
 	<!--   
 	</div>
 	  <div id="map"></div>
