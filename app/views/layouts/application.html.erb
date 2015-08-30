@@ -36,11 +36,15 @@
 		          <% end %>
 		        </div>
 		            <div class="zilla-login" id="nav-scroll-down">
+					  <% if session[:current_user_id]%>
+					  <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id])%>
+					  <%= link_to "Logout", sessions_path, method: :delete %>
+					  <% else %>
 		              <%= image_tag 'navbar_text.png', width: 300, height: 24, alt: 'navbar_text'%>
+					  <% end %>
 		            </div>
 		      </nav>
 		    </div>
-
 		  </div>
 		</div>
 
