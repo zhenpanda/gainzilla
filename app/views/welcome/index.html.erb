@@ -29,8 +29,8 @@
 <div class="black-bg">
 
   <div class="container hidden-xs no-gutter"> 
-  <!--|____________| -->
     <div class="row no-gutter no-hugger">
+  	<!--|____________| -->
       <div class="col-xs-12 text-center splash-bg no-gutter">	
 		<div class="weight-top-banner text-center">
 			<%= image_tag 'please_enter.png', width: 490, height: 20, alt: 'enter_weight'%>
@@ -38,19 +38,54 @@
 		<div class="weight-scale-bg">
 			<div class="scale">
 				<form action="" id="weight-input">
-					<input type="password" name="password">
+					<input id="weight-box" type="password" name="password">
 				</form>
 				<%= image_tag 'scale2.png', width: 280, height: 295, alt: 'scale_img'%>
+			</div>
+			<div id="check-box">
+				<%= image_tag 'check.png', width: 158, height: 60, alt: 'scale_img'%>
 			</div>
 		</div>
 	  </div>
 	</div>
 
-	<div class="chart-bg">
-		<canvas id="myChart" width="400" height="400"></canvas>
+  <div class="container hidden-xs no-gutter"> 
+	<div class="row no-gutter no-hugger chart-bg">
+  	<!--|_||_____||_____||_| -->
+  	  <div class="col-xs-1"></div>
+  	  <div class="col-xs-5 text-center no-gutter">
+
+  	  </div>
+  	  <div class="col-xs-5 text-center no-gutter">	
+		<div class="chart-canvas" >
+			<canvas id="myChart" width="300" height="300"></canvas>
+		</div>
+		<div id="science-graph">
+			<%= image_tag 'science_graph.png', width: 330, height: 20, alt: 'scale_img'%>
+		</div>
+	  <div class="col-xs-1"></div>
+  	  </div>
+  	</div>
+
+	<!--   
 	</div>
-	<div id="map"></div>
-  </div>
+	  <div id="map"></div>
+  	</div> 
+  	-->
+
+  	<!-- 
+	General Tso counted head but never calries.
+	You got Naan-thing to worry about.
+	7 days without pizza can make one weak.
+  	
+  	Opzz
+	Wow almost forgot to tacobout Mexican food.
+	Those are really good too.
+  	-->
+
+	<!--  
+	Just remember you are going to be ok!
+	-->
 
 </div>
 

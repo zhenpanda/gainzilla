@@ -30,12 +30,23 @@
 
 $(document).ready(function() {
 
+	//login page js
 	$("#nav-scroll-down").click(function() {
 		//alert( "Handler for .click() called." );
 		$("html, body").animate({ scrollTop: 1000 }, "slow");
 	});
-	
-	$( "#map" ).click(function() {
+
+	//weight page js
+	$( ".chart-canvas" ).hide();
+	$( "#science-graph" ).hide();
+	$( "#check-box" ).click(function() {
+	  $('#weight-box').val('');
+	  $("html, body").animate({ scrollTop: 725 }, "slow");
+
+	  //draw chart with some timeout
+	  setTimeout(function(){
+	  	$( ".chart-canvas" ).show(); 
+	  	$( "#science-graph" ).show();
 		// Get the context of the canvas element we want to select
 		var ctx = document.getElementById("myChart").getContext("2d");
 		var data = {
@@ -43,7 +54,7 @@ $(document).ready(function() {
 		    datasets: [
 		        {
 		            label: "My Second dataset",
-		            fillColor: "rgba(255,0,0,0.75)",
+		            fillColor: "rgba(255,0,0,0.87)",
 		            strokeColor: "rgba(151,187,205,0.8)",
 		            highlightFill: "rgba(151,187,205,0.8)",
 		            highlightStroke: "rgba(151,187,205,1)",
@@ -78,7 +89,11 @@ $(document).ready(function() {
 		}
 		var myBarChart = new Chart(ctx).Bar(data, options);
 		console.log("chart is bein loaded.");
+	  	}, 700
+	  );
+
 	});
+
 
 });
 
