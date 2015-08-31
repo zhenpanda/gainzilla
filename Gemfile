@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 
 ruby "2.1.2"
-gem 'rails_12factor', group: :production 
+group :production do
+  gem 'rails_12factor'
+end
 
 gem 'gmaps4rails'
 
