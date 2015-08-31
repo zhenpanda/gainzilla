@@ -177,7 +177,7 @@
 /* restaurant section */
 /* ------------------------------------------------------- */
 .restaurant-bg {
-  height: 900px;
+  height: 700px;
   background-color: #ff9900;
 }    
 #orange-arrow-down{
@@ -188,8 +188,28 @@
   cursor:pointer;
 }
 #remember{
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.restaurant-text {
+  padding-top: 45px;
+}
+/* end section */
+/* ------------------------------------------------------- */
+.end-bg{
+  background-color: #cc3300;
+  height: 680px;
+  position: relative;
+}
+#dark-arrow-down {
+  position: absolute;
+  top: -50px;
+  left: 395px;
+  z-index: 10;
+  cursor:pointer;
+}
+#be-ok{
+  padding-top: 200px;
 }
 /* ------------------------------------------------------- */
 .no-gutter {

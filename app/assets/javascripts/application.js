@@ -103,18 +103,31 @@ $(document).ready(function() {
 	});
 
 	//weight page: resturant section
-	$( ".fader1" ).hide();
-	$( ".fader2" ).hide();
-	$( ".fader3" ).hide();
-	$( ".fader4" ).hide();
-	$( ".fader5" ).hide();
-	$( ".fader6" ).hide();
+	$( "#fader1" ).hide();
+	$( "#fader2" ).hide();
+	$( "#fader3" ).hide();
+	$( "#fader4" ).hide();
+	$( "#fader5" ).hide();
+	$( "#fader6" ).hide();
 	$("#orange-arrow-down").click(function() {
-		$(".fader1").delay( 100 ).fadeIn('slow', function() {
-			$(".fader2").delay( 50 ).fadeIn('slow', function() {
-				$(".fader3").delay( 20 ).fadeIn('slow', function() {});
+		$("#fader1").delay( 350 ).fadeIn('slow', function() {
+			$("#fader2").delay( 200 ).fadeIn('slow', function() {
+				$("#fader3").delay( 120 ).fadeIn('slow', function() {
+					$("#fader4").delay( 740 ).fadeIn('slow', function() {
+						$("#fader5").delay( 860 ).fadeIn('slow', function() {
+							$("#fader6").delay( 900 ).fadeIn('slow', function() {});
+						});
+					});
+				});
 			});
 		});
+	});
+
+	//weight page: end section
+	$( "#be-ok" ).hide();
+	$("#dark-arrow-down").click(function() {
+		$("html, body").animate({ scrollTop: 3760 }, "slow");
+		$("#be-ok").delay( 450 ).fadeIn( "slow" );
 	});
 });
 
