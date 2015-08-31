@@ -42,7 +42,7 @@
 		<div class="weight-scale-bg">
 			<div class="scale">
 				<form action="" id="weight-input">
-					<input id="weight-box" type="password" name="password">
+					<input id="weight-box" size="8" type="password" name="weight">
 				</form>
 				<%= image_tag 'scale2.png', width: 280, height: 295, alt: 'scale_img'%>
 			</div>
@@ -115,7 +115,7 @@
   	  <!--|____________| -->
   	  <div class="col-xs-12 no-gutter parent-div">
   	  	<div id="white-arrow-down">
-  	  		<%= image_tag 'white_arrow_down.png', width: 80, height: 80, alt: 'white_arrow_down'%>
+  	  		<%= image_tag 'white_arrow_down.png', width: 80, height: 80, alt: 'white_arrow_down_img'%>
   	  	</div>
 	  	<div class="center-sides" id="map"></div>
   	  </div>
@@ -124,20 +124,29 @@
 	   
   <div class="container hidden-xs no-gutter restaurant-bg">
   	<div class="row no-gutter no-hugger">
-  		<div class="col-xs-4 no-gutter"></div>
-  		<div class="col-xs-4 no-gutter"></div>
-  		<div class="col-xs-4 no-gutter"></div>
+  	  <!--|____________| -->
+  	  <div class="col-xs-12 no-gutter parent-div text-center">
+  	  	<div id="orange-arrow-down">
+  	  		<%= image_tag 'orange_arrow_down.png', width: 80, height: 80, alt: 'orange-arrow-down_img'%>
+  	  	</div>
+  	  	<div id="remember">
+  	  		<%= image_tag 'remember.png', width: 360, height: 60, alt: 'remember_text'%>
+  	  	</div>
+  	  </div>
+  	</div>
+  	<div class="row no-gutter no-hugger">
+  		<!--|____||____||____| -->
+  		<div class="col-xs-4 no-gutter text-center fader1">
+  			<%= image_tag 'chinese.png', width: 270, height: 270, alt: 'chinese_img'%>
+  		</div>
+  		<div class="col-xs-4 no-gutter text-center fader2">
+  			<%= image_tag 'indian.png', width: 270, height: 270, alt: 'indian_img'%>
+  		</div>
+  		<div class="col-xs-4 no-gutter text-center fader3">
+  			<%= image_tag 'pizza.png', width: 270, height: 270, alt: 'pizza_img'%>
+  		</div>
 	</div>
   </div>
-  	<!-- 
-	General Tso counted head but never calries.
-	Just eat it, you got Naan-thing to worry about.
-	And of course, 7 days without pizza can make one weak.
-  	
-  	Opzz
-	Wow, wow, woah!
-	Almost forgot to tacobout Mexican food.
-  	-->
 
 	<!--  
 	Just remember you are going to be ok!

@@ -52,9 +52,9 @@ $(document).ready(function() {
 		    datasets: [
 		        {
 		            label: "My Second dataset",
-		            fillColor: "rgba(255,0,0,0.87)",
+		            fillColor: "rgba(151,187,205,0.8)",
 		            strokeColor: "rgba(151,187,205,0.8)",
-		            highlightFill: "rgba(151,187,205,0.8)",
+		            highlightFill: "rgba(255,0,0,0.8)",
 		            highlightStroke: "rgba(151,187,205,1)",
 		            data: [0.0000001, 100]
 		        }
@@ -94,14 +94,28 @@ $(document).ready(function() {
 		$("html, body").animate({ scrollTop: 1285 }, "slow");
 	});
 	$("#yellow-arrow-down").click(function() {
-		$("html, body").animate({ scrollTop: 1920 }, "slow");
+		$("html, body").animate({ scrollTop: 2020 }, "slow");
 	});
 
 	//weight page: map section
 	$("#white-arrow-down").click(function() {
-		$("html, body").animate({ scrollTop: 2780 }, "slow");
+		$("html, body").animate({ scrollTop: 2760 }, "slow");
 	});
 
+	//weight page: resturant section
+	$( ".fader1" ).hide();
+	$( ".fader2" ).hide();
+	$( ".fader3" ).hide();
+	$( ".fader4" ).hide();
+	$( ".fader5" ).hide();
+	$( ".fader6" ).hide();
+	$("#orange-arrow-down").click(function() {
+		$(".fader1").delay( 100 ).fadeIn('slow', function() {
+			$(".fader2").delay( 50 ).fadeIn('slow', function() {
+				$(".fader3").delay( 20 ).fadeIn('slow', function() {});
+			});
+		});
+	});
 });
 
 /*

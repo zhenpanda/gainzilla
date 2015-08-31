@@ -103,8 +103,8 @@
 }
 #weight-input{
   position: absolute;
-  left: 388px;
-  top: 110px;
+  left: 432px;
+  top: 115px;
 }
 #check-box{
   margin-top: 46px;
@@ -174,12 +174,23 @@
   z-index: 10;
   cursor:pointer;
 }
-/* map section */
+/* restaurant section */
 /* ------------------------------------------------------- */
 .restaurant-bg {
   height: 900px;
   background-color: #ff9900;
 }    
+#orange-arrow-down{
+  position: absolute;
+  top: -30px;
+  left: 415px;
+  z-index: 10;
+  cursor:pointer;
+}
+#remember{
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
 /* ------------------------------------------------------- */
 .no-gutter {
   padding: 0 !important;
