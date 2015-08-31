@@ -60,8 +60,8 @@
   margin-top: 25px;
 }
 .crack-bg{
-/*background-image: url(<%= asset_path 'crack_bg.png' %>);*/
-  background-image: url("crack_bg.png");
+/*background: url("/assets/banner.jpg");*/
+  background-image: url("/assets/crack_bg.png");
   height: 920px;
 }
 .login-form {
@@ -71,13 +71,13 @@
   margin-top: 30px;
 }
 .go-button{
-  background-image: url("go_button.png");
+  background-image: url("/assets/go_button.png");
   width: 204px;
   height: 86px;
   cursor:pointer;
 }
 .getin-button{
-  background-image: url("getin_button.png");
+  background-image: url("/assets/getin_button.png");
   width: 204px;
   height: 86px;
   cursor:pointer;
