@@ -9,6 +9,7 @@ group :production do
 end
 
 gem 'gmaps4rails'
+gem 'sprockets'
 
 #gem 'rails-footnotes', '~> 4.0'
 gem 'bootstrap-sass', '~> 3.3.5'
