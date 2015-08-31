@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 
+ruby "2.1.2"
+gem 'rails_12factor', group: :production 
+
 gem 'gmaps4rails'
 
 #gem 'rails-footnotes', '~> 4.0'
@@ -50,10 +53,7 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
-
-ruby "2.1.2"
-gem 'rails_12factor', group: :production  
+end 
 
 gem 'rails-assets-underscore', source: 'https://rails-assets.org'
 gem 'rails-assets-backbone', source: 'https://rails-assets.org'
