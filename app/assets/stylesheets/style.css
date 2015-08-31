@@ -101,10 +101,13 @@
 .scale{
   padding-top: 100px;
 }
-#weight-input{
+.weight-input{
   position: absolute;
   left: 432px;
   top: 115px;
+}
+.weight-submit{
+  opacity: 0;
 }
 #check-box{
   margin-top: 46px;

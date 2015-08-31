@@ -41,9 +41,13 @@
 		</div>
 		<div class="weight-scale-bg">
 			<div class="scale">
-				<form action="" id="weight-input">
+				<!-- <form action="" id="weight-input">
 					<input id="weight-box" size="8" type="password" name="weight">
-				</form>
+				</form> -->
+        <%= form_for @weight, html:{id: "weight-input" } do |f| %>
+          <%= f.password_field :weight, {size: 8, class: "weight-input"} %>
+          <%= f.submit "", class: "weight-submit" %>
+        <% end %>
 				<%= image_tag 'scale2.png', width: 280, height: 295, alt: 'scale_img'%>
 			</div>
 			<div id="check-box">

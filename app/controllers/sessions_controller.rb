@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     user = User.find_by(username: params[:username])
     if user && user.authenticate(params[:password])
       session[:current_user_id] = user.id
-      redirect_to welcome_index_path
+      redirect_to new_weight_path
     else
       redirect_to root_path
     end

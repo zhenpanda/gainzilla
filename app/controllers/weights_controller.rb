@@ -1,11 +1,17 @@
 class WeightsController < ApplicationController
-
-  def create
-  	@weight = Weight.new(weight: weight_params, user_id: session[:current_user_id])
+  
+  #needed for post route
+  def new
+  	@weight = Weight.new	
   end
 
-  def weight_params
-    params.require(:weight).permit(:weight)
+  def create
+  	#binding.pry
+  	@weight = Weight.create({
+  		weight: params[:weight][:wieght].to_f,
+  		user_id: session[:current_user_id]
+  		})
+  	redirect_to new_weight_path 
   end
 
 end
