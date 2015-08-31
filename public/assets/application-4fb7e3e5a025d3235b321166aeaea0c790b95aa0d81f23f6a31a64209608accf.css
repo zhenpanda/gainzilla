@@ -1,0 +1,257 @@
+/* General CSS */
+/* ------------------------------------------------------- */
+/* Nav bar */
+
+.navbar-default {
+  background-image: none;
+  background-color: #fee4ad;
+  border-top: 0px solid #faf3d2;
+  border-bottom: 0px solid #ffffff;
+}
+/*.navbar-moblie {
+  background-color: #fee4ad;
+  background-image: none;
+  border-width: 0px;
+  border-bottom: 5px solid #ffffff;
+  margin-bottom: 0px;
+}*/
+.zilla-logo{
+  float: left;
+  padding: 4px 4px 4px 4px;
+  margin-bottom: 4px;
+  display: block;
+}
+.zilla-login{
+  float: right;
+  padding: 26px 4px 0px 4px;
+  margin-bottom: 4px;
+  display: block;
+  cursor:pointer;
+}
+/* Main page splash img */
+.splash-bg{
+  /*background-color: white;*/
+  background: #ffcc99;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmY2M5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iI2NjMzMwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iI2NjMzMwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top,  #ffcc99 0%, #cc3300 86%, #cc3300 86%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc99), color-stop(86%,#cc3300), color-stop(86%,#cc3300));
+  background: -webkit-linear-gradient(top,  #ffcc99 0%,#cc3300 86%,#cc3300 86%); 
+  background: -o-linear-gradient(top,  #ffcc99 0%,#cc3300 86%,#cc3300 86%); 
+  background: -ms-linear-gradient(top,  #ffcc99 0%,#cc3300 86%,#cc3300 86%);
+  background: linear-gradient(to bottom,  #ffcc99 0%,#cc3300 86%,#cc3300 86%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc99', endColorstr='#cc3300',GradientType=0 );
+  
+}
+.black-bg{
+  background-color: black;
+}
+.ground-color{
+  background-color: #660000;
+  height: 70px;
+}
+.river-color{
+  background-color: #cc3300;
+  height: 120px;
+}
+.login-banner{
+  height: 80px;
+  background-color: #ffcc99;
+}
+.banner-text{
+  margin-top: 25px;
+}
+.crack-bg{
+  background-image: url("crack_bg.png");
+  height: 920px;
+}
+.login-form {
+  margin-top: 60px; 
+}
+.form-space {
+  margin-top: 30px;
+}
+.go-button{
+  background-image: url("go_button.png");
+  width: 204px;
+  height: 86px;
+  cursor:pointer;
+}
+.getin-button{
+  background-image: url("getin_button.png");
+  width: 204px;
+  height: 86px;
+  cursor:pointer;
+}
+/* weight section */
+/* ------------------------------------------------------- */
+.parent-div{
+  position: relative;
+}
+.weight-top-banner{
+  background-color: #ffcc99;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+.weight-scale-bg{
+  background-color: #cc3300;
+  height: 580px;
+  position: relative;
+}
+.scale{
+  padding-top: 100px;
+}
+.weight-input{
+  position: absolute;
+  left: 432px;
+  top: 115px;
+}
+.weight-submit{
+  opacity: 0;
+}
+#check-box{
+  margin-top: 46px;
+  cursor:pointer;
+}
+.chart-bg{
+  background-color: #993300;
+  height: 600px;
+}
+.chart-canvas{
+  margin-top: 110px;
+  background-color: white;
+  margin-bottom: 40px;
+  border-style: outset;
+}
+#science-graph{
+  padding-top: 0px;
+}
+#zilla-weight{
+  padding-top: 128px;
+}
+#everything-ok{
+  padding-top: 35px;
+}
+#red-arrow-down{
+  position: absolute;
+  left: 310px;
+  top: 545px;
+  z-index: 10;
+  cursor:pointer;
+}
+#zilla-eats-bg{
+  height: 630px;
+  background-color: #cc3300;
+}
+#zilla-eat{
+  padding-top: 120px;
+}
+#hungry {
+  padding-top: 20px;
+}
+#yellow-arrow-down{
+  position: absolute;
+  left: 385px;
+  top: 575px;
+  z-index: 10;
+  cursor:pointer;
+}
+/* map section */
+/* ------------------------------------------------------- */
+.map-bg{
+  height: 840px;
+  background-color: #ffcc99;
+}
+#visit-mc{
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+#map {
+  height: 490px;
+  width: 860px;
+}
+#white-arrow-down {
+  position: absolute;
+  top: -40px;
+  left: 398px;
+  z-index: 10;
+  cursor:pointer;
+}
+/* restaurant section */
+/* ------------------------------------------------------- */
+.restaurant-bg {
+  height: 700px;
+  background-color: #ff9900;
+}    
+#orange-arrow-down{
+  position: absolute;
+  top: -30px;
+  left: 415px;
+  z-index: 10;
+  cursor:pointer;
+}
+#remember{
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.restaurant-text {
+  padding-top: 45px;
+}
+/* end section */
+/* ------------------------------------------------------- */
+.end-bg{
+  background-color: #cc3300;
+  height: 680px;
+  position: relative;
+}
+#dark-arrow-down {
+  position: absolute;
+  top: -50px;
+  left: 395px;
+  z-index: 10;
+  cursor:pointer;
+}
+#be-ok{
+  padding-top: 200px;
+}
+/* ------------------------------------------------------- */
+.no-gutter {
+  padding: 0 !important;
+}
+.no-hugger {
+  margin: 0 !important;  
+}
+.spacing-reset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.center-sides {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 940px;
+    }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
