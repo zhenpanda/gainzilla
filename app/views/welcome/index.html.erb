@@ -6,7 +6,7 @@
 	            center: {lat: 40.740112, lng: -73.990060},
 	           panControl: true,
 	             zoomControl: true,
-	             size: (500,500)
+	             size: (860,490)
 	           };        
 	        var map = new google.maps.Map(document.getElementById('map'),myOptions);
 	        var myLatLng = {lat: 40.740112, lng: -73.990060};
@@ -14,13 +14,17 @@
 	        var infowindow = new google.maps.InfoWindow();
 	            var latitude =  myLatLng.lat;
 	            var longitude=  myLatLng.lng;
-	            
-				var marker = new google.maps.Marker({
-	            position: new google.maps.LatLng(40.749814, -73.983969),
-	            map: map,
-	            animation: google.maps.Animation.DROP
-	            });
-
+	        
+			var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.749814, -73.983969),
+            map: map,
+            animation: google.maps.Animation.DROP
+	        });
+			var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.709437, -74.009439),
+            map: map,
+            animation: google.maps.Animation.DROP
+	        });
 		};
 	google.maps.event.addDomListener(window, "load", initialize);
 </script>
@@ -80,7 +84,10 @@
   	  <!--|____________| -->
   	  <div class="col-xs-12 text-center parent-div" id="zilla-eats-bg">
   	  	<div id="zilla-eat">
-			<%= image_tag 'zilla_eats.png', width: 390, height: 410, alt: 'zilla_eats_img'%>
+			<%= image_tag 'zilla_eats.png', width: 450, height: 320, alt: 'zilla_eats_img'%>
+  	  	</div>
+  	  	<div id="hungry">
+			<%= image_tag 'hungry.png', width: 260, height: 50, alt: 'hurgry'%>
   	  	</div>
   	  	<div id="yellow-arrow-down">
   	  		<%= image_tag 'yellow_arrow_down.png', width: 108, height: 110, alt: 'yellow_arrow_down_img'%>
@@ -89,27 +96,47 @@
   	</div>
   </div>
 
-  <div class="container hidden-xs no-gutter"> 
-	<div class="row no-gutter no-hugger map-bg">
+  <div class="container hidden-xs no-gutter map-bg">
+  	<div class="row no-gutter no-hugger">
+  		<div class="col-xs-2 no-gutter"></div>
+  		<div class="col-xs-2 no-gutter">
+	  	  	<div id="visit-mc">
+	  	  		<%= image_tag 'visit.png', width: 185, height: 143, alt: 'visit_img'%>
+	  	  	</div>
+	  	</div>
+	  	<div class="col-xs-2 no-gutter"></div>
+	  	<div class="col-xs-2 no-gutter">
+	  		<div id="visit-mc">
+				<%= image_tag 'time_to_pay.png', width: 278, height: 143, alt: 'time_to_pay'%>
+	  	  	</div>
+	  	</div>
+	</div>
+	<div class="row no-gutter no-hugger">
   	  <!--|____________| -->
-  	  <div class="col-xs-12 text-center">
+  	  <div class="col-xs-12 no-gutter parent-div">
+  	  	<div id="white-arrow-down">
+  	  		<%= image_tag 'white_arrow_down.png', width: 80, height: 80, alt: 'white_arrow_down'%>
+  	  	</div>
+	  	<div class="center-sides" id="map"></div>
   	  </div>
   	</div>
   </div>
-	<!--   
+	   
+  <div class="container hidden-xs no-gutter restaurant-bg">
+  	<div class="row no-gutter no-hugger">
+  		<div class="col-xs-4 no-gutter"></div>
+  		<div class="col-xs-4 no-gutter"></div>
+  		<div class="col-xs-4 no-gutter"></div>
 	</div>
-	  <div id="map"></div>
-  	</div> 
-  	-->
-
+  </div>
   	<!-- 
 	General Tso counted head but never calries.
-	You got Naan-thing to worry about.
-	7 days without pizza can make one weak.
+	Just eat it, you got Naan-thing to worry about.
+	And of course, 7 days without pizza can make one weak.
   	
   	Opzz
-	Wow almost forgot to tacobout Mexican food.
-	Those are really good too.
+	Wow, wow, woah!
+	Almost forgot to tacobout Mexican food.
   	-->
 
 	<!--  

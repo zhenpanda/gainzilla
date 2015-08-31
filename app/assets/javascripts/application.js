@@ -94,10 +94,14 @@ $(document).ready(function() {
 		$("html, body").animate({ scrollTop: 1285 }, "slow");
 	});
 	$("#yellow-arrow-down").click(function() {
-		$("html, body").animate({ scrollTop: 1900 }, "slow");
+		$("html, body").animate({ scrollTop: 1920 }, "slow");
 	});
 
 	//weight page: map section
+	$("#white-arrow-down").click(function() {
+		$("html, body").animate({ scrollTop: 2780 }, "slow");
+	});
+
 });
 
 /*

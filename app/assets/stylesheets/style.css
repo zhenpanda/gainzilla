@@ -90,7 +90,8 @@
   background-color: #ffcc99;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: thick white;
+  border-bottom-style: solid;
+  border-bottom-color: white;
 }
 .weight-scale-bg{
   background-color: #cc3300;
@@ -142,6 +143,9 @@
 #zilla-eat{
   padding-top: 120px;
 }
+#hungry {
+  padding-top: 20px;
+}
 #yellow-arrow-down{
   position: absolute;
   left: 385px;
@@ -152,12 +156,29 @@
 /* map section */
 /* ------------------------------------------------------- */
 .map-bg{
-  height: 910px;
+  height: 840px;
   background-color: #ffcc99;
 }
+#visit-mc{
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
 #map {
-      height: 500px;
-      width: 500px;
+  height: 490px;
+  width: 860px;
+}
+#white-arrow-down {
+  position: absolute;
+  top: -40px;
+  left: 398px;
+  z-index: 10;
+  cursor:pointer;
+}
+/* map section */
+/* ------------------------------------------------------- */
+.restaurant-bg {
+  height: 900px;
+  background-color: #ff9900;
 }    
 /* ------------------------------------------------------- */
 .no-gutter {
@@ -170,6 +191,12 @@
   padding: 0;
   border: 0;
   margin: 0;
+}
+.center-sides {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
 }
 @media (min-width: 1200px) {
     .container{
