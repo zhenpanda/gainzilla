@@ -60,9 +60,12 @@
   margin-top: 25px;
 }
 .crack-bg{
-/*background: url("/assets/banner.jpg");*/
-  background-image: url("/assets/crack_bg.png");
+/*  background-image: url("/assets/crack_bg.png");*/
   height: 920px;
+}
+#crack-bg-img {
+  z-index: 0;
+  position: absolute;
 }
 .login-form {
   margin-top: 60px; 
@@ -71,16 +74,25 @@
   margin-top: 30px;
 }
 .go-button{
-  background-image: url("/assets/go_button.png");
+/*  background-image: url("/assets/go_button.png");*/
   width: 204px;
   height: 86px;
   cursor:pointer;
+  z-index: 5;
+}
+#go-button-submit{
+  visibility: hidden;
 }
 .getin-button{
-  background-image: url("/assets/getin_button.png");
+/*  background-image: url("/assets/getin_button.png");*/
   width: 204px;
   height: 86px;
+  margin-top: 30px;
   cursor:pointer;
+  z-index: 5;
+}
+#getin-button-submit{
+  visibility: hidden;
 }
 /* weight section */
 /* ------------------------------------------------------- */

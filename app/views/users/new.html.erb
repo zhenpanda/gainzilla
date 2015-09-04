@@ -26,8 +26,13 @@
     </div>
   </div>
 
-  <div class="container hidden-xs no-gutter crack-bg"> 
+  <div class="container hidden-xs no-gutter crack-bg parent-div"> 
+    <div class="login-bg">
+    <!--|____________| -->
+      <%= image_tag 'crack_bg.png', alt: 'crack_bg img', id: "crack-bg-img" %> 
+    </div>
     <div class="login-form">
+
     <!--|______||______| -->
       <div class="col-xs-6 text-center no-gutter banner-text">
         <%= image_tag 'username_text.png', alt: 'username_text'%> 
@@ -38,8 +43,10 @@
           <%= image_tag 'password_text.png', alt: 'password_text'%> 
           <div class="form-space"></div>
           <%= password_field_tag :password%><br>
-          <div class="login-form"></div>
-          <%= submit_tag "", class: "go-button" %>
+          <div class="login-form">
+            <%= image_tag 'go_button.png', alt: 'go_button img', class: "go-button" %> 
+          </div>
+          <%= submit_tag "", id: "go-button-submit" %>
         <% end %>
       </div>
     </div>
@@ -58,9 +65,11 @@
           <%= image_tag 'password_again_text.png', alt: 'password_again_text'%><br>
           <div class="form-space"></div>
           <%= f.password_field :password_confirmation%><br>
-          <div class="form-space"></div>
+          <div class="form-space">
+          </div>
+          <%= image_tag 'getin_button.png', alt: 'getin_button img', class: "getin-button"%>
         <br>
-        <%= f.submit "", class: "getin-button" %>
+        <%= f.submit "", id: "getin-button-submit" %>
         <% end %>
       </div>
     </div>

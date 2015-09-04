@@ -34,7 +34,13 @@ $(document).ready(function() {
 	$("#nav-scroll-down").click(function() {
 		$("html, body").animate({ scrollTop: 1000 }, "slow");
 	});
-
+	$(".go-button").click(function(){
+		$( "#go-button-submit" ).trigger( "click" );
+	});
+	$(".getin-button").click(function(){
+		$( "#getin-button-submit" ).trigger( "click" );
+	});
+	
 	//weight page: chart section
 	$( ".weight-hide" ).hide();
 	$( "#check-box" ).click(function() {
