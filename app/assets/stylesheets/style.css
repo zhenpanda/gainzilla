@@ -1,3 +1,13 @@
+/*
+heroku issue
+
+$bundle exec rake assets:precompile
+$git add . 
+$git commit -m "msg" 
+$git push heroku master
+
+*/
+
 /* General CSS */
 /* ------------------------------------------------------- */
 /* Nav bar */
@@ -61,11 +71,15 @@
 }
 .crack-bg{
 /*  background-image: url("/assets/crack_bg.png");*/
-  height: 920px;
+  height: 940px;
+}
+#splash-bg-img {
+  width: 100%;
 }
 #crack-bg-img {
   z-index: 0;
   position: absolute;
+  width: 100%;
 }
 .login-form {
   margin-top: 60px; 
@@ -246,7 +260,12 @@
   padding-right: auto;
 }
 @media (min-width: 1200px) {
-    .container{
-        max-width: 940px;
-    }
+  .container {
+    width: 990px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
 }
